@@ -1,8 +1,36 @@
 body {
     font-family: arial;
     margin: 0;
+    background-color: rgb(27, 24, 24);
+    color: whitesmoke;
 }
 
+h1 {
+    text-align: center;
+    background: linear-gradient(to left, #5c6431, #5bc085 100%);
+    background-position: 0 100%;
+    background-size: 100% 2px;
+    background-repeat: repeat-x;
+}
+
+figure {
+    background-color: rgb(38, 43, 40);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.figure-text {
+    background-color: rgba(38, 43, 40, 0.726);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.figure-text span {
+    margin-left: 10px;
+}
+
+/*Here starts the image styling*/
 .row {
     display: flex;
     text-align: center;
@@ -14,12 +42,14 @@ body {
 
 img {
     width: 1200px;
-    height: auto1;
+    height: auto;
 }
 
 @media screen and (max-width:1920px) {
     img {
         width: 1200px;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -30,6 +60,7 @@ img {
     background-color: rgba(0, 0, 0, 0.733);
     color: white;
     padding-bottom: 200px;
+    border-radius: 15px;
 }
 
 .right {
@@ -41,3 +72,5 @@ img {
         width: 100%;
     }
 }
+
+/*Here finishes the image styling*/
