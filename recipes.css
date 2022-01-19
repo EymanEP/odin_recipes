@@ -1,0 +1,118 @@
+body {
+    font-family: arial;
+    margin: 0;
+    background-color: rgb(27, 24, 24);
+    color: whitesmoke;
+}
+
+h1 {
+    background:
+        linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+        linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    text-align: center;
+}
+
+h1:hover,
+h1:focus {
+    background-size: 0 0.1em, 100% 0.1em;
+}
+
+figure {
+    background-color: rgb(38, 43, 40);
+    padding: 20px;
+    border-radius: 20px;
+    transition: 500ms;
+}
+
+figure:hover {
+    box-shadow: 10px -8px rgb(14, 11, 11);
+}
+
+.figure-text {
+    background-color: rgba(38, 43, 40, 0.726);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.figure-text:hover {
+    box-shadow: 6px -5px rgb(21, 24, 22);
+    background-color: rgba(38, 43, 40, 0.89);
+    transition: 500ms;
+}
+
+.figure-text span {
+    margin-left: 10px;
+}
+
+/*Here starts the image styling*/
+.row {
+    display: flex;
+    text-align: center;
+}
+
+.column {
+    float: left;
+}
+
+img {
+    width: 1200px;
+    height: auto;
+}
+
+@media screen and (max-width:1920px) {
+    img {
+        width: 1200px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.left {
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+    padding-bottom: 200px;
+    border-radius: 15px;
+}
+
+.right {
+    width: 40%;
+}
+
+@media screen and (min-width: 1000px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/*Here finishes the image styling*/
+
+.ingredients {
+    text-align: left;
+}
+
+li ol {
+    text-decoration-color: white;
+}
+
+h3 {
+    background:
+        linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+        linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+h3:hover,
+h3:focus {
+    background-size: 0 0.1em, 100% 0.1em;
+}
