@@ -75,6 +75,10 @@ img {
 
 /*Here finishes the image styling*/
 
-.salad {
+.ingredients {
     text-align: left;
+}
+
+li ol {
+    text-decoration-color: white;
 }
